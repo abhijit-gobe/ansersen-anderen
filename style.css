@@ -1,0 +1,464 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'poppins';
+    background-color: #FF5500;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+#content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #C8CFD6;
+}
+
+nav h3 {
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+}
+nav .nav-link:nth-child(1) {
+    display: none;
+}
+
+.nav-link {
+    width: 16.6vw;
+    padding: 1.2vw;
+    /* background-color: red; */
+    border-left: 2px solid #C8CFD6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+
+
+
+nav .nav-link:nth-child(2) {
+    border: none;
+}
+
+.nav-link:hover {
+    background-color: #FF5500;
+}
+
+#content h4 {
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#content h1 {
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+    font-size: 8.8vw;
+    color: #fff;
+    line-height: 7vw;
+    cursor: pointer;
+    transition: all linear 0.1s;
+    margin-bottom: 1vw;
+}
+
+#content h1 span:hover {
+    color: #FF5500;
+}
+
+#section2 {
+    width: 100%;
+    height: 130vh;
+    position: relative;
+    display: flex;
+    color: #fff;
+}
+
+.image1 {
+    padding: 1vw;
+    width: 50%;
+    height: 100%;
+    background: url('./assets/img1.jpg');
+    background-position: top;
+    background-size: cover;
+    border: 1px solid #000;
+    transform: all linear 1s;
+    cursor: pointer;
+    position: relative;
+}
+
+.image2 {
+    width: 50%;
+    height: 100%;
+    background: url('./assets/img2.jpg');
+    background-position: top;
+    background-size: cover;
+    border: 1px solid #000;
+    transform: all linear 0.2s;
+    cursor: pointer;
+    position: relative;
+}
+
+.image1:hover,
+.image2:hover {
+    background: #FF5500;
+}
+
+#section3 {
+    width: 100%;
+    height: 100vh;
+    background: url('./assets/img3.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.middleText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+}
+
+#section4 {
+    width: 100%;
+    height: 130vh;
+    position: relative;
+    display: flex;
+    color: #fff;
+}
+
+#section4 .image1 {
+    background: url('./assets/img4.jpg');
+    background-position: top;
+}
+
+#section4 .image2 {
+    background: url('./assets/img5.jpg');
+    background-size: cover;
+}
+
+#section4 .image1:hover,
+#section4 .image2:hover {
+    background: #FF5500;
+}
+
+#section5 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    background: url('./assets/img6.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#section5 .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: #000;
+    padding: 1vw 0;
+    /* padding-right: 1vw; */
+}
+
+.container h3 {
+    font-size: 1.4vw;
+    font-weight: 400;
+    /* padding: 0.5vw 0; */
+    padding-left: 1vw;
+    padding-bottom: 0.5vw;
+
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5vw;
+    border-top: 1px solid #000;
+}
+
+.input input {
+    width: 12vw;
+    padding: 0.5vw 1vw;
+    margin-top: 0.5vw;
+    border: none;
+    outline: none;
+}
+
+.input input::placeholder {
+    font-size: 1vw;
+}
+
+.input a {
+    color: #000;
+    font-size: 1.2vw;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0vw 1vw;
+}
+
+#section6 {
+    width: 100%;
+    height: 75vh;
+    background-color: #fff;
+}
+
+#section6 h1 {
+    text-transform: uppercase;
+    font-size: 8.8vw;
+    color: #000;
+    line-height: 7vw;
+    cursor: pointer;
+    transition: all linear 0.1s;
+    padding: 1vw 0;
+}
+
+#section6 h1 span:hover {
+    color: #FF5500;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.left .elem {
+    padding: 1.5vw 0;
+    padding-left: 1.5vw;
+    border-top: 1px solid #000;
+    transition: all linear 0.1s;
+    cursor: pointer;
+}
+
+.left .elem h3 {
+    font-size: 1.25vw;
+    font-weight: 500;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+}
+
+.right .elem {
+    padding: 1.5vw 0;
+    padding-left: 1.5vw;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    transition: all linear 0.1s;
+    cursor: pointer;
+}
+
+.right .elem h3 {
+    font-size: 1.25vw;
+    font-weight: 500;
+}
+
+.elem:hover {
+    background-color: #FF5500;
+}
+
+@media (max-width: 600px) {
+    #hero {
+        height: 85vh;
+    }
+
+    nav h3 {
+        font-size: 4vw;
+
+    }
+
+    .nav-link {
+        width: 50%;
+        padding: 4vw;
+    }
+
+    nav .nav-link:nth-child(2),
+    nav .nav-link:nth-child(3),
+    nav .nav-link:nth-child(4),
+    nav .nav-link:nth-child(5),
+    nav .nav-link:nth-child(6) {
+        display: none;
+    }
+
+    nav .nav-link:nth-child(1) {
+        display: initial;
+        border-left: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #content h4 {
+        font-size: 4.5vw;
+    }
+
+    #content h1 {
+        font-size: 8.4vw;
+        margin: 0 2.5vw;
+        margin-bottom: 3vw;
+    }
+
+    #section2 {
+        height: 130vh;
+        flex-direction: column;
+    }
+
+    .image1 {
+        width: 100%;
+    }
+
+    .image2 {
+        width: 100%;
+    }
+
+    #section3 {
+        height: 40vh;
+    }
+
+    .middleText {
+        font-size: 4vw;
+    }
+
+    #section3 .middleText {
+        font-size: 3vw;
+    }
+
+    #section4 {
+        flex-direction: column;
+    }
+
+    #section4 .image1 {
+        background-size: cover;
+    }
+
+    #section5 {
+        height: 70vh;
+    }
+
+    .container {
+        border: 1px solid #000;
+    }
+
+    .container h3 {
+        font-size: 6vw;
+        padding: 2vw;
+        width: 80vw;
+
+    }
+
+    .input input {
+        width: 50vw;
+        padding: 3vw 2vw;
+    }
+
+    .input input::placeholder {
+        font-size: 3vw;
+    }
+
+    .input a {
+        font-size: 4vw;
+        padding-right: 5vw;
+        font-weight: 700;
+    }
+
+    #section6 {
+        height: fit-content;
+    }
+
+    #section6 h1 {
+        display: none;
+    }
+
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left .elem {
+        padding: 6vw 0;
+        padding-left: 4vw;
+    }
+
+    .left .elem:nth-child(1) {
+        border-top: 2px solid #000;
+    }
+
+    .left .elem h3 {
+        font-size: 4.5vw;
+        font-weight: 400;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right .elem {
+        padding: 6vw 0;
+        padding-left: 4vw;
+    }
+
+    .right .elem h3 {
+        font-size: 4.5vw;
+        font-weight: 400;
+    }
+
+    .elem:hover {
+        background-color: #FF5500;
+    }
+}
